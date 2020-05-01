@@ -89,7 +89,7 @@ def main():
         # checa se o numero respeita os limites. se o numero nao respeitar os limites, a funcao vai ser chamada novamente
         erro = limite_inferior_superior(num_estados, 1, 10)
 
-    # linha 2 pega o numero de estados
+    # linha 2 pega o numero de simbolos terminais
     erro = True
     # enquanto estiver errado pede novamente ao usuario
     while erro:
@@ -158,7 +158,7 @@ def main():
     # para cada entrada da lista
     for entrada in lista_de_entradas:
         # estado atual q0
-        estado_atual = '0'
+        estado_atual = list(automato_finito.keys())[0][0]
         # para cada indice da cadeia de entrada
         for i in range(len(entrada)):
             # se o indice for vazio
